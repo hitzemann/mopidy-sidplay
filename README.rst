@@ -16,6 +16,8 @@ Mopidy-Sidplay
 
 Mopidy backend extension for .sid files
 
+Not going to happen soon. I would need to provide an own library and file scanner. Mupidy already relies on gstreamer and gstreamer has everything you need. If that bug from 2014 regarding mime types is finally fixed it would be a patch against audio/scan.py only.
+
 
 Installation
 ============
