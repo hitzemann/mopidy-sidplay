@@ -1,21 +1,21 @@
 from __future__ import unicode_literals
 
-from mopidy_sidplay import SidplayBackend
+from mopidy_sidplay import SidplayExtension
 
 
 def test_get_default_config():
-    back = SidplayBackend()
+    ext = Extension()
 
-    config = back.get_default_config()
+    config = ext.get_default_config()
 
     assert '[sidplay]' in config
     assert 'enabled = true' in config
 
 
 def test_get_config_schema():
-    back = SidplayBackend()
+    ext = Extension()
 
-    schema = back.get_config_schema()
+    schema = ext.get_config_schema()
 
     assert 'sidplayfp' in schema
     assert 'media_dir' in schema
