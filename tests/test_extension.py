@@ -10,6 +10,8 @@ def test_get_default_config():
 
     assert '[sidplay]' in config
     assert 'enabled = true' in config
+    assert 'player = sidplayfp' in config
+    assert 'media_dir = /media/C64Music' in config
 
 
 def test_get_config_schema():
@@ -17,8 +19,6 @@ def test_get_config_schema():
 
     schema = ext.get_config_schema()
 
-    assert 'sidplayfp' in schema
-    assert 'media_dir' in schema
-
+    print(schema)
 
 # TODO Write more tests
