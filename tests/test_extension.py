@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from mopidy_sidplay import SidplayExtension
+from mopidy_sidplay import Extension
 
 
 def test_get_default_config():
